@@ -37,7 +37,7 @@ namespace FieldValidatorAPI
         }
 
         // Property providing access to the StringlengthValidDel delegate instance with lazy initialization
-        public static StringLengthValidDel StringlengthFieldValid
+        public static StringLengthValidDel StringlengthFieldValidDel
         {
             get
             {
@@ -49,7 +49,7 @@ namespace FieldValidatorAPI
         }
 
         // Property providing access to the DateValidDel delegate instance with lazy initialization
-        public static DateValidDel DateFiledValid
+        public static DateValidDel DateFiledValidDel
         {
             get
             {
@@ -61,7 +61,7 @@ namespace FieldValidatorAPI
         }
 
         // Property providing access to the PatternMatchValidDel delegate instance with lazy initialization
-        public static PatternMatchValidDel PatternMatchValid
+        public static PatternMatchValidDel PatternMatchValidDel
         {
             get
             {
