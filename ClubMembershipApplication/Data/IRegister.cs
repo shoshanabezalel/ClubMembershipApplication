@@ -10,5 +10,6 @@ namespace ClubMembershipApplication.Data
     {
         bool Register(string[] fields);
         bool EmailExists(string emailAddress);
-    }
+
+     }
 }

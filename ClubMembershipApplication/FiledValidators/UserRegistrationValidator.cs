@@ -1,4 +1,5 @@
-﻿using FieldValidatorAPI;
+﻿using ClubMembershipApplication.Data;
+using FieldValidatorAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,9 +25,10 @@ namespace ClubMembershipApplication.FiledValidators
         PatternMatchValidDel _patternMatchValidDel = null;
         CompareFieldsValidDel _compareFieldsValidDel = null;
 
-        EmailExistDel emailExistDel = null;
+        EmailExistDel _emailExistDel = null;
 
         string[] _filedArray = null;
+        IRegister _register = null;
 
         public string[] FieldArray
         {
@@ -43,6 +45,7 @@ namespace ClubMembershipApplication.FiledValidators
         public void InitialiseValidatorDelegates()
         {
             _fieldValidatorDel = new FieldValidatorDel(ValidField);
+            _emailExistDel = new EmailExistDel(_register.EmailExists);
 
             _requiredValidDel = CommonFieldValidatorFunctions.RequiredFieldValidDel;
             _stringLengthValidDel = CommonFieldValidatorFunctions.StringlengthFieldValidDel;

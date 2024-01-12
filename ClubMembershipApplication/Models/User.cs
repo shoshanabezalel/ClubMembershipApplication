@@ -18,9 +18,9 @@ namespace ClubMembershipApplication.Models
         public DateTime DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
         public string AdressFirstLine { get; set; }
-        public string AdressSecondLine { get;}
-        public string AdressCity { get;}
-        public string PostCode { get;}
+        public string AdressSecondLine { get; set; }
+        public string AdressCity { get; set; }
+        public string PostCode { get; set; }
     }
 }
 
