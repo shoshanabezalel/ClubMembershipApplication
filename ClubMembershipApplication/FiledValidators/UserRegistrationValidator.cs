@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClubMembershipApplication.FiledValidators
 {
-    public class UserRegistrationValidator : IFieldValidators
+    public class UserRegistrationValidator : IFieldValidator
     {
         const int FirstName_Min_Length = 2;
         const int FirstName_Max_Length = 100;
