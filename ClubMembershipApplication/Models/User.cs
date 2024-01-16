@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClubMembershipApplication.Models
 {
+    // Hi...!!
     public class User
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
